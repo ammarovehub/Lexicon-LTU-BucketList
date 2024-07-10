@@ -24,3 +24,6 @@ wishes.forEach(wish => {
   newWish.innerText = wish;
   listSection.appendChild(newWish);
 });
+
+// Logging the number of items into the list
+console.log(listSection.children.length);
