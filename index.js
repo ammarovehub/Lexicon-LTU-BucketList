@@ -8,3 +8,6 @@ listSection.appendChild(wish1);
 const wish2 = document.createElement('p');
 wish2.innerText = 'Skydiving';
 listSection.lastElementChild.insertAdjacentElement('afterend', wish2);
+
+// innerHTML
+console.log(listSection.innerHTML);
