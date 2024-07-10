@@ -16,3 +16,11 @@ console.log(listSection.innerHTML);
 const wish3 = '<p>Learn to play piano</p>';
 // listSection.innerHTML = wish3;
 listSection.insertAdjacentHTML('afterbegin', wish3);
+
+// More wishes using a loop
+const wishes = ['Play Dark Soul games', 'Learn esperanto', 'Read 20 books per year'];
+wishes.forEach(wish => {
+  const newWish = document.createElement('p');
+  newWish.innerText = wish;
+  listSection.appendChild(newWish);
+});
