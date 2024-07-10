@@ -27,3 +27,7 @@ wishes.forEach(wish => {
 
 // Logging the number of items into the list
 console.log(listSection.children.length);
+
+// Change the content of the header h2
+const ownersName = document.querySelector('.owner');
+ownersName.innerText = "Ammar's";
