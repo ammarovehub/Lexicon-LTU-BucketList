@@ -15,3 +15,4 @@ console.log(listSection.innerHTML);
 // wish 3
 const wish3 = '<p>Learn to play piano</p>';
 // listSection.innerHTML = wish3;
+listSection.insertAdjacentHTML('afterbegin', wish3);
