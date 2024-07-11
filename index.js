@@ -31,3 +31,7 @@ console.log(listSection.children.length);
 // Change the content of the header h2
 const ownersName = document.querySelector('.owner');
 ownersName.innerText = "Ammar's";
+
+// Replace the first wish on the list
+const firstWish = listSection.firstElementChild;
+listSection.replaceChild(wish2, firstWish);
