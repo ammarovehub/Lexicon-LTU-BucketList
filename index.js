@@ -35,3 +35,10 @@ ownersName.innerText = "Ammar's";
 // Replace the first wish on the list
 const firstWish = listSection.firstElementChild;
 listSection.replaceChild(wish2, firstWish);
+
+// Replace the middle wish on the list
+const middleListMath = Math.floor(listSection.children.length / 2);
+const middleWish = listSection.children[middleListMath];
+const newMiddleWish = document.createElement('p');
+newMiddleWish.innerText = 'Swim with the dolphins';
+listSection.replaceChild(newMiddleWish, middleWish);
