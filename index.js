@@ -42,3 +42,7 @@ const middleWish = listSection.children[middleListMath];
 const newMiddleWish = document.createElement('p');
 newMiddleWish.innerText = 'Swim with the dolphins';
 listSection.replaceChild(newMiddleWish, middleWish);
+
+// Remove the last wish on the list
+const lastWish = listSection.lastChild;
+listSection.removeChild(lastWish);
